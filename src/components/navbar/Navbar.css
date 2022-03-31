@@ -1,0 +1,84 @@
+.navbar{
+    width: 1920px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(238,103,29);
+background: linear-gradient(65deg, rgba(238,103,29,1) 42%, rgba(241,149,52,1) 80%);
+    padding: 0 100px;
+}
+
+.navbar__logo__part {
+    /* background-color: red; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo__part h1 {
+    color: white;
+}
+
+.navbar__logo__part h1 span {
+    color: black;
+    font-family: cursive;
+}
+
+.navbar__search__part {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.navbar__search__part input {
+    height: 45px;
+    text-indent: 10px;
+    width: 95%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+.navbar__search__icon__part {
+    width: 7%;
+    height: 45px;
+    font-size: 30px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    color: rgba(255, 255, 255, 0.678);
+    justify-content: center;
+    background-color: #EE671D;
+}
+
+.navbar__login__part {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: seagreen; */
+}
+
+.navbar__login__part button {
+    width: 200px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    color: #EE671D;
+}
+
+.navbar__login__part svg {
+    font-size: 45px;
+    color: white;
+}
