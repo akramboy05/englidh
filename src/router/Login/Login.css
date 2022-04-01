@@ -1,0 +1,21 @@
+.login_container{
+    width: 64%;
+    height: 600px;
+    border: 20px solid #EBEFF0;
+    margin: 50px auto;
+}
+
+.login_first_span div{
+    width: 50px;
+    height: 4px;
+    background-color: #23085A;
+    margin-left: 17.8%;
+    margin-top: 24px;
+}
+.login_first_span h1{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 37px;
+    color: #23085A;
+    margin: 15px 17.8%;
+}
