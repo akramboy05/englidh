@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Banner from "../../components/banner/Banner"
 import "./Home.css"
 
 
@@ -20,6 +20,7 @@ function Home() {
         <h1>Welcome to LearnEnglish</h1>
         <p>Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners. Everything you find here has been specially created by the British Council, the world's English teaching experts.</p>
       </div>
+      <Banner/>
     </div>
   )
 }
