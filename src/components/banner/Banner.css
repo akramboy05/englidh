@@ -113,6 +113,9 @@
     .banner_wrapper{
         width: 95%;
     }
+    .banner_wrapper_box{
+        height: 100%;
+    }
 }
 @media screen and (max-width:283px) {
     .banner_wrapper{
