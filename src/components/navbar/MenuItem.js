@@ -1,7 +1,7 @@
  export const MenuItem=[
     {
         title: "Home",
-        url:"#",
+        url:"/",
         cName: 'nav-links',
         expand:[
             "salom",
@@ -9,8 +9,8 @@
             "salom",
         ]
     }, {
-        title: "Sevice",
-        url:"login",
+        title: "Online Courses",
+        url:"/courses",
         cName: 'nav-link',
         expand:[
             "salom",
@@ -18,32 +18,32 @@
             "salom",
         ]
     }, {
-        title: "project",
-        url:"#",
+        title: "Skills",
+        url:"/skills",
         cName: 'nav-links',
     }, {
-        title: "contact",
-        url:"#",
+        title: "Grammar",
+        url:"/grammar",
         cName: 'nav-links'
     }, {
-        title: "contact",
-        url:"#",
+        title: "Vocabulary",
+        url:"/vocabulary",
         cName: 'nav-links'
     }, {
-        title: "Home",
-        url:"#",
+        title: "Business English",
+        url:"/business",
         cName: 'nav-links'
     }, {
-        title: "Home",
-        url:"#",
+        title: "General English",
+        url:"/general",
         cName: 'nav-links'
     }, {
-        title: "Home",
-        url:"#",
+        title: "IELTS",
+        url:"/ielts",
         cName: 'nav-links'
     }, {
-        title: "sign up",
-        url:"#",
+        title: "Community",
+        url:"/community",
         cName: 'nav-links-mobile'
     }
 
