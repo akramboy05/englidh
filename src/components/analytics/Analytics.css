@@ -1,0 +1,10 @@
+.analytics{
+    width: calc(100% - 310px);
+    height: 83vh;
+    background-color: #fff;
+    margin-left: 290px;
+    margin-top: 6%;
+    border-radius: 10px;
+    box-shadow: rgba(109, 140, 170, 0.2) 0px 8px 24px;
+    position: relative;
+}

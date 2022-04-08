@@ -1,0 +1,37 @@
+.admin{
+    width: 100%;
+    height: 100vh;
+    /* background-color:var(--py-purple); */
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.admin .bar{
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.sidebar2{
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 96vh;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius:20px;
+    display: flex;
+    flex-direction: column;
+    padding-top:70px;
+}
+
+.sidebar2_svg{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

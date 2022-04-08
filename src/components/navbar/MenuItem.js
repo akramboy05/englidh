@@ -9,8 +9,8 @@
             "salom",
         ]
     }, {
-        title: "Online Courses",
-        url:"/courses",
+        title: "Books",
+        url:"/schools",
         cName: 'nav-link',
         expand:[
             "salom",

@@ -17,7 +17,7 @@ function Navbar() {
   const [openUl, setOpenUl] = useState(false)
 
 
-  if (location.pathname === "/admin") {
+  if(location.pathname === "/admin"){
     return <></>
   }
   return (

@@ -6,7 +6,7 @@ import Admin from "./router/admin/Admin";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Login from './router/Login/Login';
-import Courses from './router/Courses/Courses';
+// import Schools from './router/schools/Schools';
 import Skills from "./router/skills/Skills"
 import Grammar from "./router/Grammar/Grammar"
 import Vocabulary from "./router/Vocabulary/Vocabulary"
@@ -14,6 +14,7 @@ import Business from "./router/business/Business"
 import General from "./router/General/General"
 import Ielts from "./router/Ielts/Ielts"
 import Community from "./router/community/Community"
+import Schools from './router/schools/Schools';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/admin" component={Admin} />
             <Route path= "/login" component={Login}/>
-            <Route path= "/courses" component={Courses}/>
+            <Route path= "/schools" component={Schools}/>
             <Route path= "/skills" component={Skills}/>
             <Route path= "/grammar" component={Grammar}/>
             <Route path= "/vocabulary" component={Vocabulary}/>
