@@ -1,14 +1,13 @@
-import React from "react";
-import './Loader.css'
+import React from 'react'
+import "./Loader.css"
+import img from "../../assets/loader2.gif"
 
 function Loader() {
   return (
-    <div className="loader_container"> 
-    <div id="loading-bar-spinner" className="spinner">
-      <div className="spinner-icon"></div>
+    <div className='loader'>
+        <img src={img} alt="" />
     </div>
-    </div>
-  );
+  )
 }
 
-export default Loader;
+export default Loader

@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./scroll-to-top/ScrollToTop";
@@ -15,11 +16,22 @@ import General from "./router/General/General"
 import Ielts from "./router/Ielts/Ielts"
 import Community from "./router/community/Community"
 import Schools from './router/schools/Schools';
+import Loader from './components/loader/Loader';
 
 
 function App() {
+  const [loading, setLoading] = useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    }, 2000)
+  },[])
   return (
     <div className="App">
+      {
+        loading?<Loader/>
+        :
+      
       <Router>
         <ScrollToTop>
         <Navbar />
@@ -39,6 +51,8 @@ function App() {
           <Footer />
         </ScrollToTop>
       </Router>
+      }
+
     </div>
   );
 }

@@ -4,7 +4,6 @@ import axios from "axios";
 
 // import "@react-pdf-viewer/core/lib/styles/index.css";
 // import Header from "../../components/header/Header";
-import Loader from "../../components/loader/Loader";
 import zipImage from "../../assets/zip.png";
 import docImage from "../../assets/doc.png";
 import pdfImage from "../../assets/pdf.png";

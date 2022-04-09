@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./FileCreator.css";
 import axios from "axios";
-import Loader from '../loader/Loader';
 
 function FileCreator() {
   const [fileName, setFileName] = useState("");
@@ -134,7 +133,6 @@ function FileCreator() {
               <option value="tarqatma">Tarqatma</option>
               <option value="togarak">To'garak va Konspekt</option>
               <option value="testlar">Testlar</option>
-
               <option value="ieltsgeneral">IELTS General</option>
               <option value="ieltslistening">IELTS Listening</option>
               <option value="ieltsreading">IELTS Reading</option>
@@ -145,7 +143,7 @@ function FileCreator() {
           </div>
         </div>
         <button className="send_file" type="submit">
-           {!postStatus ? <></> : <Loader/>}   Create File
+           {!postStatus ? <></> :  <></>}  Create File
         </button>
       </form>
     </div>
