@@ -123,6 +123,9 @@
         grid-template-rows: repeat(3,1fr);
         margin-left: 15px;
     }
+    .home_text{
+        margin-top: -50px;
+    }
     .book_box{
         height: 310px;
     }
@@ -130,6 +133,7 @@
 @media screen and (max-width:825px){
     .home_text{
         width: 770px;
+        margin-top: -50px;
     }
     .home_banner_wrapper{
         /* margin-left: 10px; */
@@ -228,11 +232,18 @@
     .book_box{
         margin-left: 35px;
     }
+    .home_text{
+        margin-top: -60px;
+    }
 }
 @media screen and (max-width:394px){
     .home_banner_wrapper{
         /* background-color: red; */
         grid-template-columns: repeat(2,1fr);
+        /* background-color: red; */
+    }
+    .home_text{
+        margin-top: -80px;
     }
     .book_box{
         margin-left: 25px;
