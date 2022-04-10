@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from "../../components/banner/Banner"
 import "./Home.css"
 import { HomeBooks } from '../../static/homeStatic'
+import {AiFillCaretRight} from "react-icons/ai"
 
 
 function Home() {
@@ -17,13 +18,17 @@ function Home() {
                 <h4>{book.owner}</h4>
               </div>
             )
+          
           }
-
-            <div className="home_media_text">
-              <h1>English for work: business English online course</h1>
-              <p>Improve your confidence when using English at work. Convenient class times, expert teachers and certificate of achievement.</p>
-              <button>Get 30% off</button>
+         
+          </div>
+          <div className="media_book">
+            <div className="media_book_right">
+              <h1>Staff Top Fives</h1>
+              <h3>Our favorite books of 2021-22</h3>
+              <h2>READ THE LIST <AiFillCaretRight/></h2>
             </div>
+            <div className="media_book_left"></div>
           </div>
       </div>
       <div className="home_text">
