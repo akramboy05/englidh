@@ -3,6 +3,7 @@ import Banner from "../../components/banner/Banner"
 import "./Home.css"
 import { HomeBooks } from '../../static/homeStatic'
 import {AiFillCaretRight} from "react-icons/ai"
+import BannerBooks from '../../components/BannerBooks/BannerBooks'
 
 
 function Home() {
@@ -37,6 +38,7 @@ function Home() {
         <p>Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners. Everything you find here has been specially created by the British Council, the world's English teaching experts.</p>
       </div>
       <Banner/>
+      <BannerBooks/>
     </div>
   )
 }

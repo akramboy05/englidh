@@ -73,6 +73,9 @@
 .media_book_right h2{
     text-align: center;
     margin-top: 20px;
+    margin-left: 34px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -150,6 +153,9 @@
 @media screen and (max-width:768px) {
    .home_banner_wrapper{
        margin-left: -5px;
+   }
+   .home_text{
+       width: 700px;
    }
 }
 
