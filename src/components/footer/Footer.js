@@ -5,11 +5,11 @@ import {useLocation} from "react-router-dom"
 function Footer() {
   const location = useLocation()
   
-  if(location.pathname === "/admin" || "/home"){
+  if(location.pathname === "/admin"){
     return <></>
   }
   return (
-    <div className='footer'>Footer</div>
+    <div className='footer'></div>
   )
 }
 

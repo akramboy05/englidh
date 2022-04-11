@@ -1,18 +1,60 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Banner from "../../components/banner/Banner"
 import "./Home.css"
 import { HomeBooks } from '../../static/homeStatic'
 import {AiFillCaretRight} from "react-icons/ai"
 import BannerBooks from '../../components/BannerBooks/BannerBooks'
-
+import axios from "axios"
 
 function Home() {
+  const [bannerFiles, setBannerFiles] = useState(null)
+  const [searchResult, setSearchResult] = useState([])
+
+
+  const seearchDocs =(value)=>{
+    if(value !== ""){
+      axios
+      .post("http://localhost:4000/create/search",{
+        ileName:value,
+      })
+      .then((response)=> setSearchResult(response.data))
+      .catch((err)=> console.log(err))
+    }
+  }
+
+  useEffect (()=>{
+    setBannerFiles(null);
+
+    axios.get("http://localhost:4000/create/books/bannerBooks")
+    .then((bannerFiles)=> setBannerFiles(bannerFiles.data))
+    .catch((err)=> console.error(err))
+  }, [])
+
+  console.log(bannerFiles);
   return (
     <div>
       <div className="home_banner">
+      {/* <div className="searchbar">
+      <input type="search" placeholder='search' onChange={(e)=> seearchDocs(e.target.value)}/> */}
+      {/* {searchResults.length ? (
+            <div className="inputResult">
+              {searchResults.map((ss) => (
+                <Link className="searchLink" to={/search/${ss?._id}}>
+                  {ss?.productInfo.length > 40
+                    ? ${[...ss?.productInfo].slice(0, 38).join("")}...
+                    : ss?.productInfo}
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <></>
+          )} */}
+      {/* </div> */}
+
+
           <div className="home_banner_wrapper">
           {
-            HomeBooks.map((book, inx) =>
+            HomeBooks?.map((book, inx) =>
               <div className="book_box" key={inx}>
                 <img src={book.img} alt="" />
                 <h2>{book.title}</h2>

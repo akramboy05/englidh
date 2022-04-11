@@ -1,4 +1,7 @@
 .footer{
+    width: 75%;
     height: 400px;
-    background: #333;
+    margin: auto;
+    margin-top: 30px;
+    border-top: 2px solid gray;
 }

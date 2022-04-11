@@ -1,21 +1,18 @@
 import React, {useState, useEffect} from 'react'
-import "./Ielts.css"
-import axios from 'axios'
+import axios from "axios"
 
-const Ielts = () => {
+const Reading = () => {
   const [bannerFiles, setBannerFiles] = useState(null)
   useEffect (()=>{
     setBannerFiles(null);
 
-    axios.get("http://localhost:4000/create/booksIelts/all")
+    axios.get("http://localhost:4000/create/readingBooks/all")
     .then((bannerFiles)=> setBannerFiles(bannerFiles.data))
     .catch((err)=> console.error(err))
   }, [])
-
-  console.log(bannerFiles);
   return (
     <div>
-      <div className="home_banner_wrapper">
+  <div className="home_banner_wrapper">
           {
             bannerFiles?.map((book, inx) =>
               <div className="book_box" key={inx}>
@@ -32,4 +29,4 @@ const Ielts = () => {
   )
 }
 
-export default Ielts
+export default Reading
