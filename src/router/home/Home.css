@@ -1,6 +1,6 @@
 .home{
-    background-color: #242424;
-    color: #fff;
+    /* background-color: #242424; */
+    /* color: #fff; */
 }
 
 .home_banner{
@@ -25,9 +25,9 @@
     cursor: pointer;
     height: 350px;
     margin:15px 20px;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px;
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
+    /* padding: 10px; */
 }
 .book_box img{
     width: 100%;
@@ -253,9 +253,9 @@
     .book_box img{
         height: 170px;
     }
-    .home_banner_wrapper{
+    /* .home_banner_wrapper{
         grid-template-columns: repeat(3, 1fr);
-    }
+    } */
 
 }
 @media screen and (max-width:530px) {
@@ -286,10 +286,11 @@
     }
     .home_banner_wrapper{
         margin-left: 10px;
+        grid-template-columns: repeat(2, 1fr);
     }
     .book_box{
-        width: 117px;
-        height: 180px;
+        width: 200px;
+        height: 280px;
     }
     .book_box h2{
         font-size: 12px;
@@ -298,7 +299,7 @@
         font-size: 10px;
     }
     .book_box img{
-        height: 150px;
+        height: 250px;
     }
     
 }
@@ -313,16 +314,10 @@
         margin-top: -60px;
     }
     .book_box{
-        width: 110px;
+        width: 175px;
     }
 }
 @media screen and (max-width:394px){
-    .home_banner_wrapper{
-        /* background-color: red; */
-        margin-left: 30px;
-        grid-template-columns: repeat(3,1fr);
-        /* background-color: red; */
-    }
     .home_text{
         margin-top: -80px;
     }
@@ -330,9 +325,9 @@
         font-size: 20px;
     }
     .book_box{
-        margin-left:-5px;
-        width: 100px;
-        height: 180px;
+        margin-left:-1px;
+        width: 170px;
+        height: 230px;
     }
     .book_box h2{
         font-size: 10px;
@@ -341,17 +336,16 @@
         font-size: 9px;
     }
     .book_box img{
-        height: 120px;
+        height: 220px;
     }
 
 }
 
 @media screen and (max-width:360px) {
     .book_box{
-        width: 90px;
-        height: 200px;
-        margin-left: -14px;
-        margin:0px 10px;
+        width: 140px;
+        height: 250px;
+        margin:0px 15px;
     }
     .book_box h2{
         font-size: 10px;
@@ -360,13 +354,7 @@
         font-size: 9px;
     }
     .book_box img{
-        height: 130px;
-    }
-    .home_banner_wrapper{
-        /* background-color: red; */
-        margin-left:13px;
-        grid-template-columns: repeat(3,1fr);
-        /* background-color: red; */
+        height: 180px;
     }
 
     .home_text h1{
@@ -382,7 +370,7 @@
     .book_box{
         margin-left: 20px;
         width: 130px;
-        height: 180px
+        height: 250px
     }
     .home_banner_wrapper{
         /* background-color: red; */
@@ -395,9 +383,9 @@
     .book_box h4{
         font-size: 9px;
     }
-    .book_box img{
+    /* .book_box img{
         height: 150px;
-    }
+    } */
 
 }
 
@@ -416,9 +404,9 @@
         width: 100%;
     }
     .book_box{
-        margin-left: 25px;
+        margin-left: 15px;
         width: 100px;
-        height: 170px;
+        height: 200px;
     }
     .book_box h2{
         font-size: 10px;
