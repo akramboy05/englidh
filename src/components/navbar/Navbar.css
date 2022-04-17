@@ -232,7 +232,19 @@
     margin-left: -50px;
   }
 }
-
+@media screen and (max-width:587px){
+  .navbar_top img{
+    width: 80px;
+  }
+}
+@media screen  and (max-width:530px){
+  .navbar_top img{
+    width: 50px;
+  }
+  .navbar_top h1{
+    font-size: 25px;
+  }
+}
 
 @media  screen and (max-width: 500px) {
   .navbar_top_first{

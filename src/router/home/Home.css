@@ -227,6 +227,11 @@
         height: 180px;
     }
 }
+@media screen  and (max-width:587px){
+    .book_box{
+        margin-left: 10px;
+    }
+}
 
 @media screen and (max-width:560px){
     .home_text{
@@ -252,12 +257,25 @@
     }
 
 }
+@media screen and (max-width:530px) {
+    .book_box{
+        width: 130px;
+        margin-left: 15px;
+        height: 250px;
+    }
+}
+
 @media screen and (max-width:500px) {
     .home_text{
         width: 400px;
     }
     .book_box{
-        width: 180px;
+        width: 130px;
+        height: 200px;
+        margin-left: 5px;
+    }
+    .book_box img{
+        height: 150px;
     }
 }
 @media screen and (max-width:456px){
@@ -322,7 +340,7 @@
         font-size: 9px;
     }
     .book_box img{
-        height: 140px;
+        height: 120px;
     }
 
 }
