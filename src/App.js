@@ -18,18 +18,17 @@ import Admin from './router/admin/Admin';
 import Speacking from './router/speacking/Speacking';
 import Reading from './router/reading/Reading';
 import AudioBook from './router/audioBook/AudioBook';
+import SinglePage from './router/single-page/SinglePage';
 function App() {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
     setTimeout(()=>{
       setLoading(false)
-    }, 2000)
+    }, 1000)
   },[])
   return (
     <div className="App">
-      {
-        loading?<Loader/>
-        :
+ 
       
       <Router>
         <ScrollToTop>
@@ -48,11 +47,12 @@ function App() {
             <Route path="/speacking" component={Speacking}/>
             <Route path="/reading" component={Reading}/>
             <Route path="/audio" component={AudioBook}/>
+            <Route path="/single/:id" component={SinglePage}/>
+            {/* <Route path="/:id" component={Singlepage}/> */}
           </Switch>
           <Footer />
         </ScrollToTop>
       </Router>
-      }
 
     </div>
   );

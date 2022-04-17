@@ -23,13 +23,10 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className="navbar_top">
-        <div className="navbar_top_first">
-          <Link to="/">
-            <img src={logo} alt="" />
-          </Link>
-          <div className="a"></div>
-          <h1>LearnEnglish</h1>
-        </div>
+      <Link to="/">
+      <img src="https://www.pngall.com/wp-content/uploads/8/E-Book-Tablet-Transparent.png" alt="" />
+      </Link>
+        <h1>eBooks</h1>
         <div className="navbar_second">
           <div className={
             inputFocus ? "navbar_search goldBorder" : "navbar_search"

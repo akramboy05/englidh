@@ -1,8 +1,13 @@
+.home{
+    background-color: #242424;
+    color: #fff;
+}
+
 .home_banner{
     width: 100%;
     height: auto;
     /* background-color: red; */
-    margin-top: 20px;
+    padding-top: 20px;
     position: relative;
 }
 .home_banner_wrapper{
@@ -18,12 +23,14 @@
 .book_box{
     width: 220px;
     cursor: pointer;
-    height: 360px;
+    height: 350px;
     margin:15px 20px;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .book_box img{
     width: 100%;
-    height: 290px;
+    height: 250px;
 }
 .book_box h2{
     text-align: center;
@@ -43,6 +50,10 @@
     height: 3px;
     background-color:#23085A;
     margin-top: 75px;
+}
+.home_banner_wrapper a{
+    text-decoration: none;
+    color: #000;
 }
 
 .media_book{
@@ -168,7 +179,21 @@
     }
     .book_box{
         width: 190px;
+        margin-left: 24px;
+        height: 280px;
     }
+    .book_box img{
+        height: 200px;
+    }
+    .home_text h1{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .home_text p{
+        font-size: 15px;
+        margin: 10px;
+    }
+
 
 }
 @media screen and (max-width:675px){
@@ -185,15 +210,21 @@
         width: 550px;
     }
     .home_banner_wrapper{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
     }
     .book_box{
-        width: 220px;
-        margin-left: 60px;
-        height: 330px;
+        width: 160px;
+        height: 230px;
+    }
+    .book_box h2{
+        font-size: 15px;
+    }
+    .book_box h4{
+        font-size: 12px;
     }
     .book_box img{
-        height: 250px;
+        height: 180px;
     }
 }
 
@@ -202,8 +233,24 @@
         width: 500px;
     }
     .book_box{
-        margin-left: 33px;
+        margin-left: 25px;
+        width: 130px;
+        height: 230px;
+        margin-bottom: 30px;
     }
+    .book_box h2{
+        font-size: 13px;
+    }
+    .book_box h4{
+        font-size: 12px;
+    }
+    .book_box img{
+        height: 170px;
+    }
+    .home_banner_wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 @media screen and (max-width:500px) {
     .home_text{
@@ -216,84 +263,149 @@
 @media screen and (max-width:456px){
     .home_text{
         width: 300px;
+        margin-left: 12px;
+    }
+    .home_banner_wrapper{
         margin-left: 10px;
     }
     .book_box{
-        margin-left: 50px;
-        width: 150px;
-        height: 260px;
+        width: 117px;
+        height: 180px;
     }
     .book_box h2{
-        font-size: 15px;
-    }
-    .book_box h4{
         font-size: 12px;
     }
+    .book_box h4{
+        font-size: 10px;
+    }
     .book_box img{
-        height: 180px;
+        height: 150px;
     }
     
 }
 @media screen and (max-width:414px){
-    .book_box{
-        margin-left: 35px;
+    /* .book_box{
+        margin-left: 10px;
+    } */
+    .home_banner_wrapper{
+        margin-left: 5px;
     }
     .home_text{
         margin-top: -60px;
+    }
+    .book_box{
+        width: 110px;
     }
 }
 @media screen and (max-width:394px){
     .home_banner_wrapper{
         /* background-color: red; */
-        grid-template-columns: repeat(2,1fr);
+        margin-left: 30px;
+        grid-template-columns: repeat(3,1fr);
         /* background-color: red; */
     }
     .home_text{
         margin-top: -80px;
     }
+    .home_text h1{
+        font-size: 20px;
+    }
     .book_box{
-        margin-left: 25px;
-        width: 150px;
-        height: 260px;
+        margin-left:-5px;
+        width: 100px;
+        height: 180px;
     }
     .book_box h2{
-        font-size: 15px;
+        font-size: 10px;
     }
     .book_box h4{
-        font-size: 12px;
+        font-size: 9px;
     }
     .book_box img{
-        height: 180px;
+        height: 140px;
     }
 
 }
 
 @media screen and (max-width:360px) {
     .book_box{
-        margin-left: 16px;
+        width: 90px;
+        height: 200px;
+        margin-left: -14px;
+        margin:0px 10px;
+    }
+    .book_box h2{
+        font-size: 10px;
+    }
+    .book_box h4{
+        font-size: 9px;
+    }
+    .book_box img{
+        height: 130px;
+    }
+    .home_banner_wrapper{
+        /* background-color: red; */
+        margin-left:13px;
+        grid-template-columns: repeat(3,1fr);
+        /* background-color: red; */
+    }
+
+    .home_text h1{
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+    .home_text p{
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width:340px) {
     .book_box{
-        margin-left: 14px;
+        margin-left: 20px;
         width: 130px;
+        height: 180px
     }
+    .home_banner_wrapper{
+        /* background-color: red; */
+        grid-template-columns: repeat(2,1fr);
+        /* background-color: red; */
+    }
+    .book_box h2{
+        font-size: 10px;
+    }
+    .book_box h4{
+        font-size: 9px;
+    }
+    .book_box img{
+        height: 150px;
+    }
+
 }
+
 @media screen and (max-width:284px){
     .home_text{
         width: 200px;
     }
+
+    .home_text h1{
+        font-size: 17px;
+        margin: 10px;
+    }
+    .home_text p{
+        font-size: 13px;
+        margin: 10px;
+        width: 100%;
+    }
     .book_box{
         margin-left: 25px;
         width: 100px;
-        height: 220px;
+        height: 170px;
     }
     .book_box h2{
-        font-size: 15px;
+        font-size: 10px;
     }
     .book_box h4{
-        font-size: 12px;
+        font-size: 9px;
     }
     .book_box img{
         height: 140px;
