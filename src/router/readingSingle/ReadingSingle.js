@@ -1,26 +1,31 @@
 import React, { useState, useEffect} from 'react'
-import "./SinglePage.css"
+// import "./SinglePage.css"
 import axios from 'axios'
 import { HomeBooks } from '../../static/homeStatic'
 import {useParams, useRouteMatch} from "react-router-dom"
 
 
-function SinglePage({match}) {
+function ReadingSingle({match}) {
     const { id } = useParams();
+    const { url } =useRouteMatch();
     const [singleFile, setSingleFile] = useState(null)
+    console.log(id)
     useEffect (()=>{
   
-      axios.get(`http://localhost:4000/create/booksIelts/${id}`)
+      axios.get(`http://localhost:4000/create/readingBooks/${id}`)
       .then((bannerFiles)=> setSingleFile(bannerFiles.data))
       .catch((err)=> console.error(err))
     }, [])
     console.log(singleFile)
     return (
     <div className='single_page'>
-      <h1>{singleFile?.fileName}</h1>
       <img src={singleFile?.fileImage} alt="" />
+      <h1>{singleFile?.fileName}</h1>
+      <h2>{singleFile?.fileOwner}</h2>
+      <a href={singleFile?.fileDownload} download>yuklab olish</a>
+
     </div>
   )
 }
 
-export default SinglePage
+export default ReadingSingle

@@ -6,6 +6,7 @@ import BannerBooks from '../../components/fileCreator/bannerBooks/BannerBooks'
 import IeltsBook from '../../components/fileCreator/IeltsBooks/IeltsBook'
 import Speacking from "../../components/fileCreator/speackingBooks/SpeackingBooks"
 import ReadingBooks from '../../components/fileCreator/readingBooks/ReadingBooks'
+import Programming from '../../components/fileCreator/programming/Programming'
 
 const Admin = () => {
   return (
@@ -17,6 +18,7 @@ const Admin = () => {
                 <Route path="/admin/BooksIelts" component={IeltsBook}/>
                 <Route path="/admin/booksSpeaking" component={Speacking}/>
                 <Route path="/admin/booksReading" component={ReadingBooks}/>
+                <Route path="/admin/booksProgramming" component={Programming}/>
             </Switch>
         </Router>
     </div>

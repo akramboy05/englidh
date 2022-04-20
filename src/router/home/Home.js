@@ -34,7 +34,7 @@ function Home() {
   console.log(bannerFiles);
   return (
     <div className='home'>
-      <BannerBooks/>
+      
 
       <div className="home_banner">
 
@@ -44,8 +44,8 @@ function Home() {
             <Link   to={`/single/${book.id}`} key={inx}>
               <div className="book_box" >
                 <img src={book.img} alt="" />
-                <h2>{book.title}</h2>
-                <h4>{book.owner}</h4>
+                {/* <h2>{book.title}</h2>
+                <h4>{book.owner}</h4> */}
               </div>
             </Link>
             )
@@ -62,11 +62,12 @@ function Home() {
             <div className="media_book_left"></div>
           </div>
       </div>
-      <div className="home_text">
+      {/* <div className="home_text">
         <div className="line"></div>
         <h1>Welcome to Learn English</h1>
         <p>Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners. Everything you find here has been specially created by the British Council, the world's English teaching experts.</p>
-      </div>
+      </div> */}
+      <BannerBooks/>
       <Banner/>
     </div>
   )

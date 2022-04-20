@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import "./Ielts.css"
-import axios from 'axios'
+import axios from 'axios';
+import { Link, useRouteMatch } from 'react-router-dom'
 
 const Ielts = () => {
+  const { url } = useRouteMatch();
   const [bannerFiles, setBannerFiles] = useState(null)
   useEffect (()=>{
     setBannerFiles(null);
@@ -18,11 +20,13 @@ const Ielts = () => {
       <div className="home_banner_wrapper">
           {
             bannerFiles?.map((book, inx) =>
-              <div className="book_box" key={inx}>
+             <Link key={inx} to={`${url}/${book._id}`}>
+               <div className="book_box" >
                 <img src={book.fileImage} alt="" />
                 <h2>{book.fileName}</h2>
                 <h4>{book.fileOwner}</h4>
               </div>
+             </Link>
             )
           
           }

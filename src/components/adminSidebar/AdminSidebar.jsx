@@ -11,6 +11,8 @@ const AdminSidebar = () => {
             <NavLink to="/admin/booksSpeaking">Speacking Books</NavLink>
             <NavLink to="/admin/booksReading">Reading Books</NavLink>
             <NavLink to="/admin/booksAudio">Audio Books</NavLink>
+            <NavLink to="/admin/booksProgramming">Programming Books</NavLink>
+            
         </div>
     </div>
   )

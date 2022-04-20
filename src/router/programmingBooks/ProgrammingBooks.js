@@ -3,13 +3,13 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import { Link, useRouteMatch } from 'react-router-dom'
 
-const Reading = () => {
+const ProgrammingBooks = () => {
   const { url } = useRouteMatch();
   const [bannerFiles, setBannerFiles] = useState(null)
   useEffect (()=>{
     setBannerFiles(null);
 
-    axios.get("http://localhost:4000/create/speackingBooks/all")
+    axios.get("http://localhost:4000/create/booksProgramming/all")
     .then((bannerFiles)=> setBannerFiles(bannerFiles.data))
     .catch((err)=> console.error(err))
   }, [])
@@ -23,8 +23,8 @@ const Reading = () => {
              <Link key={inx} to={`${url}/${book._id}`}>
                <div className="book_box" >
                 <img src={book.fileImage} alt="" />
-                <h2>{book.fileName}</h2>
-                <h4>{book.fileOwner}</h4>
+                {/* <h2>{book.fileName}</h2>
+                <h4>{book.fileOwner}</h4> */}
               </div>
              </Link>
             )
@@ -36,4 +36,4 @@ const Reading = () => {
   )
 }
 
-export default Reading
+export default ProgrammingBooks

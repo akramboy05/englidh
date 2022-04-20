@@ -63,6 +63,20 @@ const BannerBooks = () => {
                     </div>
                 </div>
                </Link>
+
+               <Link to="/programming">
+               <div className="banner_books_box">
+                    <div className="banner_books_box_left">
+                        <h1>Programm Books</h1>
+                        <h3>The best Programm books for you</h3>
+                        <h2>Learn more <AiFillCaretRight/></h2>
+
+                    </div>
+                    <div className="banner_books_box_right">
+                        <img src="https://static1.smartbear.co/smartbearbrand/media/images/blog/what%E2%80%99s-the-best-programming-language-to-learn-first.png?ext=.png" alt="" />
+                    </div>
+                </div>
+               </Link>
         </div>
         {/* <div className="banner_text">
             <h1>WHY INDEPENDENCE MATTERS</h1>

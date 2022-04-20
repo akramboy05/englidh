@@ -21,12 +21,12 @@ const ReadingBooks = () => {
         type: type
       }).then((createdFile) => console.log(createdFile))
       .catch((err) => console.log(err))
-    // setFileName("")
-    // setFileOwner("")
-    // setFileImage("")
-    // setFileView("")
-    // setFileDownload("")
-    // setType("")
+    setFileName("")
+    setFileOwner("")
+    setFileImage("")
+    setFileView("")
+    setFileDownload("")
+    setType("")
   }
   return (
     <div>

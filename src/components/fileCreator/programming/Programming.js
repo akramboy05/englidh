@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import axios from "axios"
 
-const IeltsBook = () => {
+const Programming = () => {
   const [fileName, setFileName] = useState("")
   const [fileOwner, setFileOwner] = useState("")
   const [fileImage, setFileImage] = useState("")
   const [fileView, setFileView] = useState("")
   const [fileDownload, setFileDownload] = useState("")
-  const [type, setType] = useState("ieltsBooks")
+  const [type, setType] = useState("programming")
 
   const sendFile = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:4000/create/booksIelts`, {
+      .post(`http://localhost:4000/create/booksProgramming`, {
         fileName: fileName,
         fileOwner: fileOwner,
         fileImage: fileImage,
@@ -45,7 +45,6 @@ const IeltsBook = () => {
             <option value="readingBooks">readingBooks</option>
             <option value="aduiBooks">aduiBooks</option>
             <option value="programming">Programming</option>
-
           </select>
         </label>
         <button type='submit'>Send </button>
@@ -54,4 +53,4 @@ const IeltsBook = () => {
   )
 }
 
-export default IeltsBook
+export default Programming
