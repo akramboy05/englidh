@@ -159,6 +159,17 @@
         height: 250px;
     }
 }
+@media screen and (max-width:492px) {
+    .banner_books_box{
+        width: 450px;
+    }
+    .banner_books_box h1{
+        font-size: 20px;
+    }
+    .banner_books_box h2{
+        font-size: 12px;
+    }
+}
 @media screen and (max-width:480px){
     .banner_books_box{
         margin-left: -40px;
@@ -195,12 +206,16 @@
     .banner_text h1{
         font-size: 21px;
     }
+    .banner_books_box{
+        width: 400px;
+        margin-left: -40px;
+    }
     
 }
 
 @media screen and (max-width:394px) {
     .banner_books_box{
-        width: 358px;
+        width: 365px;
         margin-left: -35px;
         height: 200px;
     }
@@ -212,9 +227,9 @@
     }
   
 }
-@media screen and (max-width:364px) {
+@media screen and (max-width:379px) {
     .banner_books_box{
-        width: 322px;
+        width: 352px;
         margin-left: -35px;
         height: 200px;
     }
@@ -231,11 +246,17 @@
         font-size: 14px;
     }
 }
+@media screen and (max-width:346px){
+    .banner_books_box{
+        width: 300px;
+        margin-left: -24px;
+    }
+}
 
 
 @media screen and (max-width:294px) {
     .banner_books_box{
-        width: 250px;
+        width: 260px;
         margin-left: -20px;
         height: 150px;
     }

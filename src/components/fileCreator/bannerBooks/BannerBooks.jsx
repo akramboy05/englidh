@@ -5,6 +5,7 @@ import axios from "axios"
 const BannerBooks = () => {
   const [fileName, setFileName] = useState("")
   const [fileOwner, setFileOwner] = useState("")
+  const [fileText, setFileText] = useState("")
   const [fileImage, setFileImage] = useState("")
   const [fileView, setFileView] = useState("")
   const [fileDownload, setFileDownload] = useState("")
@@ -16,24 +17,26 @@ const BannerBooks = () => {
       .post(`http://localhost:4000/create/books`, {
         fileName: fileName,
         fileOwner: fileOwner,
+        fileText: fileText,
         fileImage: fileImage,
         fileView: fileView,
         fileDownload: fileDownload,
         type: type
       }).then((createdFile) => console.log(createdFile))
       .catch((err) => console.log(err))
-    // setFileName("")
-    // setFileOwner("")
-    // setFileImage("")
-    // setFileView("")
-    // setFileDownload("")
-    // setType("")
+    setFileName("")
+    setFileOwner("")
+    setFileImage("")
+    setFileView("")
+    setFileDownload("")
+    setType("")
   }
   return (
-    <div>
+    <div className='ieltsAdmin'>
       <form onSubmit={sendFile}>
         <input onChange={(e) => setFileName(e.target.value)} value={fileName} type="text" placeholder='File Name' />
         <input onChange={(e) => setFileOwner(e.target.value)} value={fileOwner} type="text" placeholder='File Owner' />
+        <input onChange={(e) => setFileText(e.target.value)} value={fileText} type="text" placeholder='File Text' />
         <input onChange={(e) => setFileImage(e.target.value)} value={fileImage} type="text" placeholder='File Image' />
         <input onChange={(e) => setFileView(e.target.value)} value={fileView} type="text" placeholder='File view' />
         <input onChange={(e) => setFileDownload(e.target.value)} value={fileDownload} type="text" placeholder='download' />

@@ -9,7 +9,7 @@ const ProgrammingBooks = () => {
   useEffect (()=>{
     setBannerFiles(null);
 
-    axios.get("http://localhost:4000/create/booksProgramming/all")
+    axios.get("http://localhost:4000/create/booksProgramming")
     .then((bannerFiles)=> setBannerFiles(bannerFiles.data))
     .catch((err)=> console.error(err))
   }, [])
@@ -23,8 +23,8 @@ const ProgrammingBooks = () => {
              <Link key={inx} to={`${url}/${book._id}`}>
                <div className="book_box" >
                 <img src={book.fileImage} alt="" />
-                {/* <h2>{book.fileName}</h2>
-                <h4>{book.fileOwner}</h4> */}
+                <h2>{book.fileName}</h2>
+                <h4>{book.fileOwner}</h4>
               </div>
              </Link>
             )

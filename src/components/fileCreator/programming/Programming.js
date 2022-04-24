@@ -7,35 +7,43 @@ const Programming = () => {
   const [fileImage, setFileImage] = useState("")
   const [fileView, setFileView] = useState("")
   const [fileDownload, setFileDownload] = useState("")
+  const [fileText, setFileText] = useState("")
+  const [all , setAll] =  useState([])
   const [type, setType] = useState("programming")
 
   const sendFile = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:4000/create/booksProgramming`, {
+      .post(`http://localhost:4000/create/programmingBooks`, {
         fileName: fileName,
         fileOwner: fileOwner,
+        fileText: fileText,
         fileImage: fileImage,
         fileView: fileView,
         fileDownload: fileDownload,
         type: type
-      }).then((createdFile) => console.log(createdFile))
+      }).then((createdFile) => setAll(createdFile))
       .catch((err) => console.log(err))
-    // setFileName("")
-    // setFileOwner("")
-    // setFileImage("")
-    // setFileView("")
-    // setFileDownload("")
-    // setType("")
+    setFileName("")
+    setFileOwner("")
+    setFileImage("")
+    setFileView("")
+    setFileDownload("")
+    setType("")
+    setFileText("")
+
   }
+  console.log(all);
   return (
-    <div>
+    <div className='ieltsAdmin'>
       <form onSubmit={sendFile}>
         <input onChange={(e) => setFileName(e.target.value)} value={fileName} type="text" placeholder='File Name' />
         <input onChange={(e) => setFileOwner(e.target.value)} value={fileOwner} type="text" placeholder='File Owner' />
+        <input onChange={(e) => setFileText(e.target.value)} value={fileText} type="text" placeholder='File Text' />
         <input onChange={(e) => setFileImage(e.target.value)} value={fileImage} type="text" placeholder='File Image' />
         <input onChange={(e) => setFileView(e.target.value)} value={fileView} type="text" placeholder='File view' />
         <input onChange={(e) => setFileDownload(e.target.value)} value={fileDownload} type="text" placeholder='download' />
+
 
         <label htmlFor="type">
           <select value={type} onChange={(e) => setType(e.target.value)} id="type">

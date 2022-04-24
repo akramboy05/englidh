@@ -144,7 +144,7 @@
         margin-top: -50px;
     }
     .book_box{
-        height: 310px;
+        height: 240px;
     }
 }
 @media screen and (max-width:825px){
@@ -159,6 +159,7 @@
     }
     .book_box{
         width: 155px;
+        height: 210px;
     }
     .book_box img{
         height: 200px;
@@ -183,7 +184,7 @@
     .book_box{
         width: 190px;
         margin-left: 24px;
-        height: 280px;
+        height: 210px;
     }
     .book_box img{
         height: 200px;
@@ -230,19 +231,33 @@
         height: 180px;
     }
 }
+@media screen and (max-width:618px) {
+    .book_box{
+        margin-left: 10%;
+        height: 190px;
+    }
+}
+@media screen and (max-width:610px) {
+    .book_box{
+    height: 190px;
+    }
+}
 @media screen  and (max-width:587px){
     .book_box{
         margin-left: 10px;
     }
+    .book_box {
+        height: 190px;
+    }
 }
 
-@media screen and (max-width:560px){
+@media screen and (max-width:566px){
     .home_text{
         width: 500px;
     }
     .book_box{
         margin-left: 20px;
-        width: 130px;
+        width: 140px;
         /* height: 230px; */
         margin-bottom: 30px;
     }
@@ -263,6 +278,15 @@
     } */
 
 }
+@media screen and (max-width:552px) {
+    .book_box{
+        height: 160px;
+        margin-left: 10px;
+    }
+    .book_box img{
+        height: 150px;
+    }
+}
 @media screen and (max-width:530px) {
     .book_box{
         width: 130px;
@@ -279,12 +303,13 @@
         width: 130px;
         /* height: 200px; */
         margin-left: 5px;
+        height: 160px;
     }
     .book_box img{
         height: 150px;
     }
 }
-@media screen and (max-width:456px){
+@media screen and (max-width:466px){
     .home_text{
         width: 300px;
         margin-left: 12px;
@@ -310,6 +335,11 @@
         height: 250px;
     } */
     
+}
+@media screen and (max-width: 422px){
+    .book_box{
+        width: 182px;
+    }
 }
 @media screen and (max-width:414px){
     /* .book_box{
@@ -353,9 +383,9 @@
 
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:379px) {
     .book_box{
-        width: 140px;
+        width: 150px;
         height: 200px;
         margin:10px 15px;
     }
@@ -401,7 +431,7 @@
 
 }
 
-@media screen and (max-width:284px){
+@media screen and (max-width:290px){
     .home_text{
         width: 200px;
     }
@@ -417,7 +447,7 @@
     }
     .book_box{
         margin-left: 15px;
-        width: 100px;
+        width: 110px;
         height: 160px;
     }
     /* .book_box h2{
