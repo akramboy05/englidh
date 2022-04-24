@@ -7,6 +7,8 @@ const ReadingBooks = () => {
   const [fileImage, setFileImage] = useState("")
   const [fileView, setFileView] = useState("")
   const [fileDownload, setFileDownload] = useState("")
+  const [fileText, setFileText] = useState("")
+  const [all , setAll] =  useState([])
   const [type, setType] = useState("readingBooks")
 
   const sendFile = (e) => {
@@ -15,11 +17,12 @@ const ReadingBooks = () => {
       .post(`http://localhost:4000/create/books`, {
         fileName: fileName,
         fileOwner: fileOwner,
+        fileText: fileText,
         fileImage: fileImage,
         fileView: fileView,
         fileDownload: fileDownload,
         type: type
-      }).then((createdFile) => console.log(createdFile))
+      }).then((createdFile) => setAll(createdFile))
       .catch((err) => console.log(err))
     setFileName("")
     setFileOwner("")
@@ -27,7 +30,10 @@ const ReadingBooks = () => {
     setFileView("")
     setFileDownload("")
     setType("")
+    setFileText("")
+
   }
+  console.log(all);
   return (
     <div>
       <form onSubmit={sendFile}>
@@ -36,6 +42,8 @@ const ReadingBooks = () => {
         <input onChange={(e) => setFileImage(e.target.value)} value={fileImage} type="text" placeholder='File Image' />
         <input onChange={(e) => setFileView(e.target.value)} value={fileView} type="text" placeholder='File view' />
         <input onChange={(e) => setFileDownload(e.target.value)} value={fileDownload} type="text" placeholder='download' />
+        <input onChange={(e) => setFileText(e.target.value)} value={fileText} type="text" placeholder='File Text' />
+
 
         <label htmlFor="type">
           <select value={type} onChange={(e) => setType(e.target.value)} id="type">

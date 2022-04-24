@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-// import "./SinglePage.css"
+import "./ReadingSingle.css"
 import axios from 'axios'
 import { HomeBooks } from '../../static/homeStatic'
 import {useParams, useRouteMatch} from "react-router-dom"
@@ -20,10 +20,13 @@ function ReadingSingle({match}) {
     return (
     <div className='single_page'>
       <img src={singleFile?.fileImage} alt="" />
+      <div className="singl_container">
       <h1>{singleFile?.fileName}</h1>
       <h2>{singleFile?.fileOwner}</h2>
-      <a href={singleFile?.fileDownload} download>yuklab olish</a>
+      {/* <p>{singleFile?.fileText}</p> */}
+      <a href={singleFile?.fileDownload} download>Download Pdf </a>
 
+      </div>
     </div>
   )
 }

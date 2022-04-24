@@ -1,8 +1,9 @@
 .navbar {
   width: 100%;
   height: auto;
-  background: rgb(233,43,46);
-  background: linear-gradient(292deg, rgba(233,43,46,1) 23%, rgba(247,96,9,1) 100%);
+  background-color: green;
+  /* background: rgb(233,43,46);
+  background: linear-gradient(292deg, rgba(233,43,46,1) 23%, rgba(247,96,9,1) 100%); */
   /* background-color:#00953B; */
   /* background-color: rgb(204, 20, 20); */
   /* background: linear-gradient(354deg, rgba(255,255,255,1) 0%, rgba(40,34,143,1) 0%, rgba(227,12,226,1) 69%); */

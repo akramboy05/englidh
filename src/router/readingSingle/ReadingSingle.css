@@ -1,0 +1,39 @@
+.single_page{
+    width: 76%;
+    height: auto;
+    margin:30px auto;
+    display: flex;
+}
+.single_page img{
+    width: 200px;
+    border: 1px solid #333;
+}
+
+.singl_container{
+    width: 600px;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.singl_container h1{
+    margin:0px 20px;
+    font-weight: 500;
+}
+
+.singl_container h2{
+    margin: 10px 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.singl_container a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(9, 202, 9);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.singl_container a:hover{
+    background-color: red;
+}

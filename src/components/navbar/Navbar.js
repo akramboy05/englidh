@@ -26,7 +26,7 @@ function Navbar() {
       <Link to="/">
       <img src="https://www.pngall.com/wp-content/uploads/8/E-Book-Tablet-Transparent.png" alt="" />
       </Link>
-        <h1>eBooks</h1>
+        <h1>LandBooks.uz</h1>
         <div className="navbar_second">
           <div className={
             inputFocus ? "navbar_search goldBorder" : "navbar_search"
