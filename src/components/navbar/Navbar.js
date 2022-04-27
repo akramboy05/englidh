@@ -24,7 +24,7 @@ function Navbar() {
     <div className='navbar'>
       <div className="navbar_top">
       <Link to="/">
-      <img src="https://www.pngall.com/wp-content/uploads/8/E-Book-Tablet-Transparent.png" alt="" />
+      <img src="https://yt3.ggpht.com/ytc/AKedOLT05MSE8HUKDN1F5cSzmNV8HO2NsW96Ts19UFRe=s900-c-k-c0x00ffffff-no-rj" alt="" />
       </Link>
         <h1>LandBooks.uz</h1>
         <div className="navbar_second">

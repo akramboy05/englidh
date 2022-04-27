@@ -15,9 +15,12 @@
     background-color: #D2B48C;
     width:700px;
     height: 300px;
-    margin: 25px 0px;
+    margin: 20px 0px;
     display: flex;
-    border: 1px solid #000;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border: 1px solid #000; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .banner_books_box_left{
@@ -215,7 +218,7 @@
 
 @media screen and (max-width:394px) {
     .banner_books_box{
-        width: 365px;
+        width: 360px;
         margin-left: -35px;
         height: 200px;
     }
@@ -250,6 +253,11 @@
     .banner_books_box{
         width: 300px;
         margin-left: -24px;
+    }
+}
+@media screen and (max-width:320px){
+    .banner_books_box{
+        width: 290px;
     }
 }
 

@@ -18,12 +18,12 @@
             "salom",
         ]
     }, {
-        title: "Skills",
-        url:"/skills",
+        title: "IELTS",
+        url:"/ielts",
         cName: 'nav-links',
     }, {
-        title: "Grammar",
-        url:"/grammar",
+        title: "READING",
+        url:"/reading",
         cName: 'nav-links'
     }, {
         title: "Vocabulary",

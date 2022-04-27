@@ -3,6 +3,7 @@ import "./ReadingSingle.css"
 import axios from 'axios'
 import { HomeBooks } from '../../static/homeStatic'
 import {useParams, useRouteMatch} from "react-router-dom"
+import {AiOutlineCloudDownload} from "react-icons/ai"
 
 
 function ReadingSingle({match}) {
@@ -23,8 +24,20 @@ function ReadingSingle({match}) {
       <div className="singl_container">
       <h1>{singleFile?.fileName}</h1>
       <h2>{singleFile?.fileOwner}</h2>
-      {/* <p>{singleFile?.fileText}</p> */}
-      <a href={singleFile?.fileDownload} download>Download Pdf </a>
+      <p>{singleFile?.fileText.split(" ").map(item =>{
+                    if(item.length > 26){
+                        let resArr = []
+                        for(let i = 0 ; i < item.length; i += 26 ){
+                            resArr.push(item.slice(i, i+26))
+                        }
+                        return resArr.join(" ")
+                    }
+                    else{
+                        return item + " "
+                    }
+                })}</p>
+      
+      <a href={singleFile?.fileDownload} download>Download</a>
 
       </div>
     </div>

@@ -25,10 +25,11 @@
     cursor: pointer;
     height: 300px;
     margin:15px 20px;
-    border: 2px solid #333;
+    /* border: 2px solid #333; */
     /* color: #fff; */
     /* border: 1px solid #fff; */
-    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    /* padding-left: 10px; */
 }
 .book_box img{
     width: 100%;
@@ -99,7 +100,19 @@
     background-size: cover;
     background-image: url("https://assets.bonappetit.com/photos/60a3f107c69110723994f2fe/master/pass/0621-Books-Lede.jpg");
 }
-
+.home_box{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.home_box h1{
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+}
 
 @media screen and (max-width:1280px){
     .home_banner_wrapper{
@@ -262,7 +275,7 @@
         margin-bottom: 30px;
     }
     .book_box img{
-        height: 220px;
+        height: 230px;
     }
     /* .book_box h2{
         font-size: 13px;
@@ -367,9 +380,9 @@
         font-size: 20px;
     }
     .book_box{
-        margin-left:5px;
-        width: 170px;
-        /* height: 230px; */
+        margin-left:20px;
+        width: 150px;
+        height: 190px;
     }
     /* .book_box h2{
         font-size: 10px;
@@ -378,7 +391,7 @@
         font-size: 9px;
     }*/
      .book_box img{
-        height: 220px;
+        height: 190px;
     } 
 
 }
@@ -430,7 +443,16 @@
     } */
 
 }
-
+@media screen and (max-width:320px) {
+    .book_box{
+        margin-left: 7px;
+    }
+}
+@media screen and (max-width:300px){
+    .book_box{
+        margin-left: 3px;
+    }
+}
 @media screen and (max-width:290px){
     .home_text{
         width: 200px;

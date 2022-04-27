@@ -34,7 +34,9 @@ function Home() {
   console.log(bannerFiles);
   return (
     <div className='home'>
-      
+      <div className="home_box">
+        <h1>The best reading books</h1>
+      </div>
 
       <div className="home_banner">
 
